@@ -1,0 +1,31 @@
+let liste = [1,2,3,4,5,6,7,8,9,10];
+var shuffleList = 'bar';
+
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  drawDiagram(liste);
+  drawDiagram.forEach(shuffleList);
+  //liste.reduce(findMax);
+  
+}
+
+function drawDiagram(liste){
+  liste.filter(function(current, index,arr){
+    rect(40*index, 400,40,-40*index);
+  });
+  
+  
+function shuffleList(){
+   liste = liste.sort(() => Math.random() - 0.5)
+  }
+  
+  //function findMax(total, num){
+   // return total - num;
+//  }
+  
+}
